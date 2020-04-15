@@ -11,7 +11,7 @@ const Navbar = () => {
         books.length === 0 ? (
           <p>Great! You completed all your tasks <span role="img" aria-label="Fire">🔥</span></p>
         ) : (
-          <p>You still have {books.length} {books.length === 1 ? ( 'task' ) : ( 'tasks' )} to complete <span role="img" aria-label="Eyes">👀</span></p>
+          <p>You have {books.length} {books.length === 1 ? ( 'task' ) : ( 'tasks' )} to complete <span role="img" aria-label="Eyes">👀</span></p>
         )
       }
     </div>
