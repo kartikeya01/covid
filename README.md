@@ -38,8 +38,4 @@ They have three parts:
 
 - Action: Describes the type of change we want to make inside the "Reducer"
 
-<<<<<<< HEAD
 - Dispatch: Sends the "Action" to the "Reducer"
-=======
-- Dispatch: Sends the "Action" to the "Reducer"
->>>>>>> 4bcadc1632cd6a8a9dd919abdebfd709fe1ec632
