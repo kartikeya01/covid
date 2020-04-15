@@ -1,68 +1,41 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Notes
 
-## Available Scripts
+## Context API
 
-In the project directory, you can run:
+It provides us a way to share state within (up and down) a component tree.
 
-### `yarn start`
+It gives us a central place to store the data, without having to pass it down as props.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+An alternative to Redux when used alongside hooks.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+We don't have to pass props down components that don't need the prop.
 
-### `yarn test`
+A global state.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Hooks
 
-### `yarn build`
+Hooks are special functions that allow us to do things in functional components. Example: Use/access state
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Different hooks in react:
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+- useState()
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+use state within a functional component
 
-### `yarn eject`
+- useEffect()
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+run code when a component renders (or re-renders)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- useContext()
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+consume context in a functional component
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Reducers
 
-## Learn More
+They have three parts: 
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Reducer: Contains all the state manipulation logic. It interacts with the state and changes the data
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Action: Describes the type of change we want to make inside the "Reducer"
 
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+- Dispatch: Sends the "Action" to the "Reducer"
