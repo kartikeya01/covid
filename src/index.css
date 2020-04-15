@@ -10,9 +10,14 @@ body {
 
 .App{
   background: #070A0E;
-  margin: 20px auto;
-  width: 90%;
-  max-width: 700px;
+  margin: 20px;
+  color: #eee;
+}
+
+.TradingView{
+  height: 700px;
+  background: #070A0E;
+  margin: 20px;
   color: #eee;
 }
 
